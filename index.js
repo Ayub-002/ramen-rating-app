@@ -4,10 +4,6 @@ function displayRamens() {
   
     ramens.forEach(ramen => {
       const img = document.createElement('img');
-      img.src = "https://moringa.instructure.com/courses/967/files/517801/preview";
-      img.src = "https://moringa.instructure.com/courses/967/files/517800/preview";
-      img.src = "https://moringa.instructure.com/courses/967/files/517798/preview";
-      img.src = "https://moringa.instructure.com/courses/967/files/517797/preview";
       img.classList.add('ramen-img');
       img.dataset.id = ramen.id;
       img.addEventListener('click', handleClick);
