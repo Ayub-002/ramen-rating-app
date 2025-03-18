@@ -40,7 +40,7 @@ function displayRamens() {
         restaurant: ramenRestaurant,
         rating: ramenRating,
         comment: ramenComment,
-        image: img.src = "https://moringa.instructure.com/courses/967/files/517797/preview"
+        image: form.image.value,
       };
   
       ramens.push(newRamen); 
