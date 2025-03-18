@@ -4,14 +4,15 @@ function displayRamens() {
   
     ramens.forEach(ramen => {
       const img = document.createElement('img');
+      img.src = ramen.image;
       img.classList.add('ramen-img');
       img.dataset.id = ramen.id;
-      img.addEventListener('click', handleClick);
+      img.addEventListener('click', handleClick(ramen));
       ramenMenu.appendChild(img);
     });
   }
-  function handleClick(event) {
-    const ramenId = event.target.dataset.id;
+  function handleClick(ramen) {
+    const ramenId = ramen.target.dataset.id;
     const ramen = ramens.find(r => r.id == ramenId);
   
     const ramenName = document.getElementById('ramen-name');
